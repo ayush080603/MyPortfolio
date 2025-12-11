@@ -22,10 +22,10 @@
     <div class="header-content">
       <div class="left-header">
         <div class="h-shape"></div>
-          <div class="image">
-            <img src="img/Ayush1.jpg" alt="" />
-          </div>
+        <div class="image">
+          <img src="img/Ayush1.jpg" alt="" />
         </div>
+      </div>
       <div class="right-header">
         <h1 class="name">
           Hi, I'm <span>Ayush Sinha.</span>
@@ -138,7 +138,6 @@
               </div>
             </div>
           </div>
-
           <div class="progress-bar">
             <p class="prog-title">C Programming</p>
             <div class="progress-con">
@@ -157,6 +156,34 @@
               </div>
             </div>
           </div>
+          <div class="progress-bar">
+            <p class="prog-title">SQL</p>
+            <div class="progress-con">
+              <p class="prog-text">70%</p>
+              <div class="progress">
+                <span class="python"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">HTML & CSS</p>
+            <div class="progress-con">
+              <p class="prog-text">85%</p>
+              <div class="progress">
+                <span class="htmlcss"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">JavaScript</p>
+            <div class="progress-con">
+              <p class="prog-text">50%</p>
+              <div class="progress">
+                <span class="javascript"></span>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
       <h4 class="stat-title">My Timeline</h4>
@@ -208,84 +235,84 @@
       </div>
     </section>
     <section class="container" id="portfolio">
-  <div class="portfolio-section">
-    <!-- Title (reusing your existing main-title styles) -->
-    <div class="main-title">
-      <h2>My <span>Portfolio</span><span class="bg-text"></span></h2>
-    </div>
-
-    <!-- Description -->
-    <p class="section-description">
-      A collection of projects showcasing my skills across Python, web development,
-      full stack applications, and modern frameworks. Each project reflects my
-      ability to build practical, real-world solutions.
-    </p>
-
-    <!-- Filter Buttons -->
-    <div class="filter-container">
-      <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="python">Python</button>
-      <button class="filter-btn" data-filter="nextjs">Next.js</button>
-      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-      <button class="filter-btn" data-filter="web">Web Dev</button>
-    </div>
-
-    <!-- Projects Grid -->
-    <div class="projects-grid">
-      <!-- Project 1: ResumeAI -->
-      <div class="project-card" data-category="nextjs fullstack">
-        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">ResumeAI</h3>
-          <p class="project-description">
-            AI-powered resume builder using Gemini API with secure auth, live preview,
-            and customizable templates built using Next.js, TypeScript, and MongoDB.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Next.js</span>
-            <span class="tech-badge">TypeScript</span>
-            <span class="tech-badge">MongoDB</span>
-            <span class="tech-badge">Gemini AI</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/ResumeAI" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-            <a href="https://resume-ai-gray-nine.vercel.app/" class="project-link link-demo" target="_blank">
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-          </div>
+      <div class="portfolio-section">
+        <!-- Title (reusing your existing main-title styles) -->
+        <div class="main-title">
+          <h2>My <span>Portfolio</span><span class="bg-text"></span></h2>
         </div>
-      </div>
 
-      <!-- Project 2: NotesGem -->
-      <div class="project-card" data-category="nextjs fullstack">
-        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">NotesGem</h3>
-          <p class="project-description">
-            Smart AI note-taking app powered by Google Gemini, Supabase Auth, Prisma,
-            and smart search. Supports dark/light mode and conversational queries.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Next.js</span>
-            <span class="tech-badge">Supabase</span>
-            <span class="tech-badge">Prisma</span>
-            <span class="tech-badge">AI</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/NotesGem" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-            <a href="https://notes-gem.vercel.app" class="project-link link-demo" target="_blank">
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-          </div>
+        <!-- Description -->
+        <p class="section-description">
+          A collection of projects showcasing my skills across Python, web development,
+          full stack applications, and modern frameworks. Each project reflects my
+          ability to build practical, real-world solutions.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="nextjs">Next.js</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
         </div>
-      </div>
 
-      <!-- Project 3: College ERP -->
-      <!-- <div class="project-card" data-category="fullstack web">
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: ResumeAI -->
+          <div class="project-card" data-category="nextjs fullstack">
+            <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">ResumeAI</h3>
+              <p class="project-description">
+                AI-powered resume builder using Gemini API with secure auth, live preview,
+                and customizable templates built using Next.js, TypeScript, and MongoDB.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Gemini AI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/ResumeAI" class="project-link link-github" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="https://resume-ai-gray-nine.vercel.app/" class="project-link link-demo" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: NotesGem -->
+          <div class="project-card" data-category="nextjs fullstack">
+            <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">NotesGem</h3>
+              <p class="project-description">
+                Smart AI note-taking app powered by Google Gemini, Supabase Auth, Prisma,
+                and smart search. Supports dark/light mode and conversational queries.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">Supabase</span>
+                <span class="tech-badge">Prisma</span>
+                <span class="tech-badge">AI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/NotesGem" class="project-link link-github" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="https://notes-gem.vercel.app" class="project-link link-demo" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: College ERP -->
+          <!-- <div class="project-card" data-category="fullstack web">
         <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
         <div class="project-content">
           <h3 class="project-title">College ERP System</h3>
@@ -307,136 +334,138 @@
         </div>
       </div> -->
 
-      <!-- Project 4: Weather App -->
-      <div class="project-card" data-category="python">
-        <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">Weather App (Desktop)</h3>
-          <p class="project-description">
-            Python desktop app using OpenWeather API and Tkinter GUI with timezone
-            handling, real-time updates, and a clean, responsive layout.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Tkinter</span>
-            <span class="tech-badge">API</span>
+          <!-- Project 4: Weather App -->
+          <div class="project-card" data-category="python">
+            <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">Weather App (Desktop)</h3>
+              <p class="project-description">
+                Python desktop app using OpenWeather API and Tkinter GUI with timezone
+                handling, real-time updates, and a clean, responsive layout.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Tkinter</span>
+                <span class="tech-badge">API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/1Weather" class="project-link link-github" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/1Weather" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 5: Fruit Ninja -->
-      <div class="project-card" data-category="python">
-        <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">Fruit Ninja Game</h3>
-          <p class="project-description">
-            Classic fruit-slicing arcade game built with Python and Pygame, including
-            bombs, score tracking, and game-over logic.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Pygame</span>
+          <!-- Project 5: Fruit Ninja -->
+          <div class="project-card" data-category="python">
+            <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">Fruit Ninja Game</h3>
+              <p class="project-description">
+                Classic fruit-slicing arcade game built with Python and Pygame, including
+                bombs, score tracking, and game-over logic.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Pygame</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/FruitNinjaGame" class="project-link link-github"
+                  target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/FruitNinjaGame" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 6: Coffee Machine Web -->
-      <div class="project-card" data-category="python web">
-        <div class="project-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">Coffee Machine Web</h3>
-          <p class="project-description">
-            Web-based coffee machine simulator combining Python OOP logic with
-            interactive HTML/CSS/JS frontend and realtime resource updates.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">JavaScript</span>
-            <span class="tech-badge">HTML/CSS</span>
+          <!-- Project 6: Coffee Machine Web -->
+          <div class="project-card" data-category="python web">
+            <div class="project-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">Coffee Machine Web</h3>
+              <p class="project-description">
+                Web-based coffee machine simulator combining Python OOP logic with
+                interactive HTML/CSS/JS frontend and realtime resource updates.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/CoffeeMachineWeb" class="project-link link-github"
+                  target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/CoffeeMachineWeb" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 7: Snake Game -->
-      <div class="project-card" data-category="python">
-        <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">Snake Game</h3>
-          <p class="project-description">
-            Classic Snake game written in Python with Pygame, featuring smooth
-            movement, collision detection, and score tracking.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Pygame</span>
+          <!-- Project 7: Snake Game -->
+          <div class="project-card" data-category="python">
+            <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">Snake Game</h3>
+              <p class="project-description">
+                Classic Snake game written in Python with Pygame, featuring smooth
+                movement, collision detection, and score tracking.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Pygame</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/SnakeGame" class="project-link link-github" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/SnakeGame" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 8: Quiz Game -->
-      <div class="project-card" data-category="python">
-        <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">Quiz Game</h3>
-          <p class="project-description">
-            Console-based quiz app with True/False questions, OOP structure,
-            modular code, and dynamic scoring.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">OOP</span>
+          <!-- Project 8: Quiz Game -->
+          <div class="project-card" data-category="python">
+            <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">Quiz Game</h3>
+              <p class="project-description">
+                Console-based quiz app with True/False questions, OOP structure,
+                modular code, and dynamic scoring.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">OOP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/QuizeGame" class="project-link link-github" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/QuizeGame" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 9: Turtle Race -->
-      <div class="project-card" data-category="python">
-        <div class="project-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);"></div>
-        <div class="project-content">
-          <h3 class="project-title">Turtle Race Game</h3>
-          <p class="project-description">
-            Fun turtle racing game using Python's Turtle module where players bet
-            on colors and watch animated races.
-          </p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Turtle</span>
+          <!-- Project 9: Turtle Race -->
+          <div class="project-card" data-category="python">
+            <div class="project-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);"></div>
+            <div class="project-content">
+              <h3 class="project-title">Turtle Race Game</h3>
+              <p class="project-description">
+                Fun turtle racing game using Python's Turtle module where players bet
+                on colors and watch animated races.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Turtle</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ayush080603/TurtleRace" class="project-link link-github" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/ayush080603/TurtleRace" class="project-link link-github" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> <!-- end .projects-grid -->
-    </div> <!-- end .portfolio-section -->
-</section>
+        </div> <!-- end .projects-grid -->
+      </div> <!-- end .portfolio-section -->
+    </section>
     <section class="container contact" id="contact">
       <div class="contact-container">
         <div class="main-title">
@@ -550,7 +579,6 @@
       </div>
     </section>
   </main>
-
   <div class="controls">
     <div class="control active-btn" data-id="home">
       <i class="fas fa-home"></i>
@@ -575,4 +603,5 @@
   <!-- Then your custom script -->
   <script src="app.js"></script>
 </body>
+
 </html>
