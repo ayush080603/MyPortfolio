@@ -1,6 +1,4 @@
-/* =========================================
-   1. Global Reset & Variables
-========================================= */
+/* 1. Global Reset & Variables */
 * {
   margin: 0;
   padding: 0;
@@ -39,9 +37,7 @@
   --color-grey-6: #12181b;
 }
 
-/* =========================================
-   2. Base Elements
-========================================= */
+/*2. Base Elements*/
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -95,9 +91,7 @@ section {
   }
 }
 
-/* =========================================
-   3. Controls & Theme Toggle
-========================================= */
+/*3. Controls & Theme Toggle*/
 .controls {
   position: fixed;
   z-index: 10;
@@ -165,9 +159,7 @@ section {
   pointer-events: none;
 }
 
-/* =========================================
-   4. Header / Hero Section
-========================================= */
+/*4. Header / Hero Section*/
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -233,9 +225,7 @@ section {
   line-height: 2rem;
 }
 
-/* =========================================
-   5. About Section
-========================================= */
+/*5. About Section*/
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -399,9 +389,7 @@ section {
   transform: translateX(-50%);
 }
 
-/* =========================================
-   6. Timeline Section
-========================================= */
+/*6. Timeline Section*/
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -459,10 +447,7 @@ section {
   color: var(--color-grey-2);
 }
 
-/* =========================================
-   7. (Legacy) Portfolio Grid & Blogs
-   (kept for compatibility if ever reused)
-========================================= */
+/*7. (Legacy) Portfolio Grid & Blogs (kept for compatibility if ever reused)*/
 .port-text {
   padding: 2rem 0;
   text-align: center;
@@ -609,9 +594,7 @@ section {
   padding-bottom: 1rem;
 }
 
-/* =========================================
-   8. Contact Section
-========================================= */
+/* 8. Contact Section */
 .contact-content-con {
   display: flex;
   padding-top: 3.5rem;
@@ -725,9 +708,7 @@ section {
   justify-content: flex-start;
 }
 
-/* =========================================
-   9. Reusable Components (Buttons & Titles)
-========================================= */
+/* 9. Reusable Components (Buttons & Titles) */
 
 /* Unified main button – used for Download Resume & Send Email */
 .main-btn {
@@ -857,9 +838,7 @@ button.main-btn .btn-icon i {
   padding-left: 0;
 }
 
-/* =========================================
-   10. New Portfolio Section (Cards + Filters)
-========================================= */
+/* 10. New Portfolio Section (Cards + Filters) */
 
 .portfolio-section {
   max-width: 1400px;
@@ -888,25 +867,31 @@ button.main-btn .btn-icon i {
 .filter-btn {
   padding: 0.8rem 2rem;
   background-color: var(--color-grey-5);
-  border: 2px solid transparent;
-  border-radius: 30px;
+  border: none;
+  border-radius: 50px;
   color: var(--color-white);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: 'Poppins', sans-serif;
 }
 
 .filter-btn:hover {
-  border-color: var(--color-secondary);
-  transform: translateY(-2px);
+  background-color: var(--color-grey-4);
+  transform: scale(1.05);
+}
+
+.light-mode .filter-btn:hover {
+  background-color: #e8e8e8;
+  color: var(--color-grey-4);
 }
 
 .filter-btn.active {
   background-color: var(--color-secondary);
-  border-color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 /* Projects grid */
@@ -1030,9 +1015,7 @@ button.main-btn .btn-icon i {
   display: none;
 }
 
-/* =========================================
-   11. Portfolio – Light Mode Fixes
-========================================= */
+/* 11. Portfolio – Light Mode Fixes */
 
 /* Make cards brighter in light mode */
 .light-mode .project-card {
@@ -1060,9 +1043,7 @@ button.main-btn .btn-icon i {
   border-color: var(--color-secondary);
 }
 
-/* =========================================
-   12. Media Queries / Responsive Layout
-========================================= */
+/* 12. Media Queries / Responsive Layout */
 
 /* Small phones */
 @media screen and (max-width: 600px) {
@@ -1372,4 +1353,189 @@ button.main-btn .btn-icon i {
   }
 }
 
-/* sourceMappingURL=styles.css.map */
+/* 13. CERTIFICATES SECTION */
+.certificates {
+  padding: 5rem 0;
+}
+
+.cert-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+  flex-wrap: wrap;
+}
+
+.cert-filter-btn {
+  padding: 0.8rem 2rem;
+  background-color: var(--color-grey-5);
+  border: none;
+  border-radius: 50px;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cert-filter-btn:hover {
+  background-color: var(--color-grey-4);
+  transform: scale(1.05);
+}
+
+.light-mode .cert-filter-btn:hover {
+  background-color: #e8e8e8;
+  color: var(--color-grey-4);
+}
+
+.cert-filter-btn.active {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cert-card {
+  background: var(--color-grey-5);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
+}
+
+.cert-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-icon {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease-in-out;
+}
+
+.cert-card:hover .cert-icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.cert-content {
+  padding: 2rem;
+}
+
+.cert-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+  font-size: 1rem;
+  color: var(--color-grey-2);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.cert-date {
+  font-size: 0.9rem;
+  color: var(--color-grey-2);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.cert-description {
+  font-size: 0.95rem;
+  color: var(--color-grey-1);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.cert-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.cert-view-btn:hover {
+  background: var(--color-primary);
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cert-view-btn i {
+  font-size: 0.9rem;
+}
+
+.cert-card.hide {
+  display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cert-filter-container {
+    gap: 0.5rem;
+  }
+
+  .cert-filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .cert-image {
+    height: 180px;
+  }
+
+  .cert-icon {
+    font-size: 4rem;
+  }
+
+  .cert-content {
+    padding: 1.5rem;
+  }
+
+  .cert-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

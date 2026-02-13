@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         });
     }
-    //Portfolio filter buttons
+    // Portfolio filter buttons
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -55,4 +55,32 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+});
+// CERTIFICATES FILTER FUNCTIONALITY
+const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+const certCards = document.querySelectorAll('.cert-card');
+
+certFilterBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Remove active class from all buttons
+    certFilterBtns.forEach(button => button.classList.remove('active'));
+    
+    // Add active class to clicked button
+    this.classList.add('active');
+    
+    const filterValue = this.getAttribute('data-cert-filter');
+    
+    certCards.forEach(card => {
+      if (filterValue === 'all') {
+        card.classList.remove('hide');
+      } else {
+        const category = card.getAttribute('data-cert-category');
+        if (category === filterValue) {
+          card.classList.remove('hide');
+        } else {
+          card.classList.add('hide');
+        }
+      }
+    });
+  });
 });
