@@ -5,7 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayush Portfolio</title>
+  <title>Ayush Sinha | Engineer</title>
+  <meta name="description"
+    content="Ayush Sinha – Customer Solutions Engineer at Gehnax Technologies. B.Tech IT graduate skilled in Python, Java, AWS, and full stack web development. View my projects and get in touch." />
+  <meta name="keywords"
+    content="Ayush Sinha, portfolio, Customer Solutions Engineer, Full Stack Developer, Python, Java, AWS, Next.js, Bengaluru" />
+  <meta name="author" content="Ayush Sinha" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ayush Sinha | Customer Solutions Engineer & Full Stack Developer" />
+  <meta property="og:description"
+    content="Customer Solutions Engineer at Gehnax Technologies. B.Tech IT grad building AWS infrastructure solutions and full stack web apps." />
+  <meta property="og:image" content="img/Portfolio Image.png" />
+  <meta property="og:url" content="https://ayush080603.github.io" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ayush Sinha | Customer Solutions Engineer & Developer" />
+  <meta name="twitter:description"
+    content="Customer Solutions Engineer at Gehnax Technologies. Building AWS infrastructure solutions and full stack web apps." />
+  <meta name="twitter:image" content="img/Portfolio Image.png" />
+  <meta name="twitter:site" content="@ayush__0806" />
+
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,15 +53,24 @@
           Hi, I'm <span>Ayush Sinha.</span>
         </h1>
         <p>
-          B.Tech Information Technology graduate and Customer Solutions Engineer
-          with hands-on experience in cloud infrastructure monitoring, AWS services,
-          and production database operations. Skilled in Python, Core Java, C, and
-          full-stack web development. Passionate about building innovative solutions
-          and growing in cloud, AWS, and Fintech domains.
+          Customer Solutions Engineer at Gehnax Technologies, working on AWS infrastructure — EC2, S3,
+          CloudWatch, and cloud onboarding. B.Tech IT graduate who loves building real things:
+          from AI-powered web apps to Python games. Currently based in Bengaluru.
         </p>
-        <div class="btn-con">
-          <a href="files/AYUSH RESUME NEW.pdf" class="main-btn">
-            <span class="btn-text">Download Resume</span>
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/sinhaayush0806" target="_blank" title="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ayush080603" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:sinhaayush0806@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="hero-btns">
+          <a href="#" class="main-btn"
+            onclick="document.querySelectorAll('.container').forEach(s=>s.classList.remove('active')); document.querySelectorAll('.control').forEach(b=>b.classList.remove('active-btn')); document.getElementById('portfolio').classList.add('active'); document.querySelector('[data-id=portfolio]').classList.add('active-btn'); return false;">
+            <span class="btn-text">View My Work</span>
+            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="files/AYUSH RESUME NEW.pdf" class="main-btn btn-outline" download>
+            <span class="btn-text">Resume</span>
             <span class="btn-icon"><i class="fas fa-download"></i></span>
           </a>
         </div>
@@ -55,15 +86,15 @@
         <div class="left-about">
           <h4>Information About me</h4>
           <p>
-            I'm a B.Tech Information Technology graduate from B.K. Birla Institute
-            of Engineering and Technology, Pilani (CGPA: 8.98/10), currently working
-            as a Customer Solutions Engineer at Gehnax Technologies LLP, Delhi.<br /><br />
+            I graduated with a B.Tech in Information Technology from B.K. Birla Institute of Engineering
+            and Technology, Pilani in 2026. Right out of college I joined Gehnax Technologies as a
+            Customer Solutions Engineer, where I work with AWS day-to-day — provisioning EC2 instances,
+            setting up CloudWatch monitoring, and helping customers get their cloud infrastructure right.<br /><br />
 
-            I have hands-on production experience with AWS EC2, CloudWatch, and Oracle
-            LMS/LOS platforms in a Fintech environment. My programming foundation includes
-            Python, Core Java, and C, with full-stack web development skills in JavaScript,
-            TypeScript, React, and Next.js. I'm passionate about cloud operations, infrastructure
-            monitoring, and building practical digital solutions.
+            Outside of work I enjoy building things: AI tools with Next.js and Gemini, Python games,
+            and anything that solves a problem I actually care about. I started coding in C and Java,
+            moved into Python, and recently got into full stack development. I'm the kind of person
+            who learns best by shipping something and then figuring out what broke.
           </p>
           <div class="btn-con">
             <a href="files/AYUSH RESUME NEW.pdf" class="main-btn">
@@ -113,69 +144,52 @@
       </div>
       <div class="about-stats">
         <h4 class="stat-title">My Skills</h4>
-        <div class="progress-bars">
-          <div class="progress-bar">
-            <p class="prog-title">Core Java</p>
-            <div class="progress-con">
-              <p class="prog-text">80%</p>
-              <div class="progress">
-                <span class="html"></span>
-              </div>
-            </div>
+        <div class="skills-icons-grid">
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-python"></i></div>
+            <p class="skill-icon-name">Python</p>
           </div>
-          <div class="progress-bar">
-            <p class="prog-title">Python</p>
-            <div class="progress-con">
-              <p class="prog-text">90%</p>
-              <div class="progress">
-                <span class="css"></span>
-              </div>
-            </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-java"></i></div>
+            <p class="skill-icon-name">Core Java</p>
           </div>
-          <div class="progress-bar">
-            <p class="prog-title">AWS (EC2, CloudWatch, S3)</p>
-            <div class="progress-con">
-              <p class="prog-text">70%</p>
-              <div class="progress">
-                <span class="react"></span>
-              </div>
-            </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fas fa-database"></i></div>
+            <p class="skill-icon-name">SQL</p>
           </div>
-          <div class="progress-bar">
-            <p class="prog-title">SQL / Oracle (LMS, LOS)</p>
-            <div class="progress-con">
-              <p class="prog-text">75%</p>
-              <div class="progress">
-                <span class="node"></span>
-              </div>
-            </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-html5"></i></div>
+            <p class="skill-icon-name">HTML5</p>
           </div>
-          <div class="progress-bar">
-            <p class="prog-title">HTML & CSS</p>
-            <div class="progress-con">
-              <p class="prog-text">85%</p>
-              <div class="progress">
-                <span class="htmlcss"></span>
-              </div>
-            </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-css3-alt"></i></div>
+            <p class="skill-icon-name">CSS3</p>
           </div>
-          <div class="progress-bar">
-            <p class="prog-title">JavaScript / TypeScript</p>
-            <div class="progress-con">
-              <p class="prog-text">60%</p>
-              <div class="progress">
-                <span class="python"></span>
-              </div>
-            </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-js"></i></div>
+            <p class="skill-icon-name">JavaScript</p>
           </div>
-          <div class="progress-bar">
-            <p class="prog-title">C Programming</p>
-            <div class="progress-con">
-              <p class="prog-text">75%</p>
-              <div class="progress">
-                <span class="javascript"></span>
-              </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-aws"></i></div>
+            <p class="skill-icon-name">AWS</p>
+          </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle"><i class="fab fa-git-alt"></i></div>
+            <p class="skill-icon-name">Git</p>
+          </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg"
+                alt="Anaconda" class="skill-devicon" />
             </div>
+            <p class="skill-icon-name">Anaconda</p>
+          </div>
+          <div class="skill-icon-item">
+            <div class="skill-icon-circle">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"
+                class="skill-devicon" />
+            </div>
+            <p class="skill-icon-name">VS Code</p>
           </div>
         </div>
       </div>
@@ -183,14 +197,14 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="tl-icon">
-            <i class="fas fa-briefcase"></i>
+            <i class="fas fa-cloud"></i>
           </div>
           <p class="tl-duration">June 2026 – Present</p>
-          <h5>Customer Solutions Engineer<span> - Gehnax Technologies LLP, Delhi</span></h5>
+          <h5>Customer Solutions Engineer<span> - Gehnax Technologies LLP</span></h5>
           <p>
-            Active monitoring of cloud infrastructure using AWS EC2 and CloudWatch.
-            Executing SQL queries on Oracle LMS and LOS production databases in a
-            Fintech environment.
+            Delivering AWS-based infrastructure solutions for customers. Involved in EC2
+            provisioning, CloudWatch monitoring, S3 management, and technical support
+            for cloud onboarding and escalations.
           </p>
         </div>
         <div class="timeline-item">
@@ -274,8 +288,9 @@
             <div class="project-content">
               <h3 class="project-title">ResumeAI</h3>
               <p class="project-description">
-                AI-powered resume builder with smart content suggestions, ATS optimization,
-                and real-time NLP feedback using Next.js, TypeScript, and MongoDB.
+                Writing a good resume is hard. ResumeAI uses Google Gemini to generate tailored content
+                based on your experience, so you spend less time staring at a blank page and more time
+                applying. Features live preview, customizable templates, and secure auth.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Next.js</span>
@@ -300,8 +315,9 @@
             <div class="project-content">
               <h3 class="project-title">NotesGem</h3>
               <p class="project-description">
-                Feature-rich note-taking app with rich text editing, categorization,
-                smart search, and responsive design using Prisma and PostgreSQL.
+                A smarter notes app — instead of just storing text, NotesGem lets you ask questions
+                about your own notes using AI. Useful when you've saved a lot and need to find
+                something fast. Supports dark/light mode, Supabase auth, and smart search.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Next.js</span>
@@ -326,9 +342,9 @@
             <div class="project-content">
               <h3 class="project-title">Healthcare Translator</h3>
               <p class="project-description">
-                AI-powered real-time healthcare translation platform for doctors and
-                patients with multilingual chat, audio recording, AI summaries, and
-                conversation history.
+                Language barriers in hospitals can be dangerous. This platform lets doctors and patients
+                communicate in real time across languages — with multilingual chat, audio recording,
+                and AI-generated summaries so nothing important gets lost in translation.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Next.js</span>
@@ -354,8 +370,9 @@
             <div class="project-content">
               <h3 class="project-title">Weather App (Desktop)</h3>
               <p class="project-description">
-                Python desktop app using OpenWeather API and Tkinter GUI with timezone
-                handling, real-time updates, and a clean, responsive layout.
+                A desktop weather app that shows real-time conditions for any city using the OpenWeather API.
+                Built with Python and Tkinter — handles timezone differences so the displayed time always
+                matches the searched location, not just your local clock.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -376,8 +393,9 @@
             <div class="project-content">
               <h3 class="project-title">Fruit Ninja Game</h3>
               <p class="project-description">
-                Classic fruit-slicing arcade game built with Python and Pygame, including
-                bombs, score tracking, and game-over logic.
+                A Python clone of the classic Fruit Ninja arcade game. Fruits fly across the screen
+                and you slice them — miss too many or hit a bomb and it's game over. Built to practice
+                collision detection, sprite handling, and game loop logic.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -398,8 +416,9 @@
             <div class="project-content">
               <h3 class="project-title">Coffee Machine Web</h3>
               <p class="project-description">
-                Web-based coffee machine simulator combining Python OOP logic with
-                interactive HTML/CSS/JS frontend and realtime resource updates.
+                Started as a pure Python OOP exercise, then turned into a full web app.
+                The backend logic handles ingredients, money, and drink recipes — the HTML/CSS/JS
+                frontend makes it interactive with real-time resource tracking in the browser.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -421,8 +440,9 @@
             <div class="project-content">
               <h3 class="project-title">Snake Game</h3>
               <p class="project-description">
-                Classic Snake game written in Python with Pygame, featuring smooth
-                movement, collision detection, and score tracking.
+                The classic Snake game, built from scratch in Python. The snake grows every time it eats,
+                speed increases as your score goes up, and the game ends when you hit a wall or yourself.
+                A solid exercise in game loops and state management.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -442,8 +462,9 @@
             <div class="project-content">
               <h3 class="project-title">Quiz Game</h3>
               <p class="project-description">
-                Console-based quiz app with True/False questions, OOP structure,
-                modular code, and dynamic scoring.
+                A console quiz app that pulls True/False questions, tracks your score, and tells you
+                what you got right. Built with OOP — each question is an object, the quiz brain handles
+                scoring, and the data is loaded from a separate module.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -463,8 +484,9 @@
             <div class="project-content">
               <h3 class="project-title">Turtle Race Game</h3>
               <p class="project-description">
-                Fun turtle racing game using Python's Turtle module where players bet
-                on colors and watch animated races.
+                Pick a color, place your bet, and watch six turtles race across the screen.
+                Each turtle moves a random number of steps per turn, so the outcome is genuinely
+                unpredictable. A fun intro to Python's Turtle module and event-driven programming.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -522,7 +544,8 @@
             <h3 class="cert-title">Tech Intern</h3>
             <p class="cert-issuer">MindDhara Private Limited</p>
             <p class="cert-date">December 2025 - February 2026</p>
-            <p class="cert-description">Development, testing, and technical problem-solving with strong documentation skills.</p>
+            <p class="cert-description">Development, testing, and technical problem-solving with strong documentation
+              skills.</p>
             <a href="https://drive.google.com/file/d/1z78sigFAPghAUZBAm7Uw1_giN0hlgJph/view?usp=drive_link"
               class="cert-view-btn" target="_blank">
               <i class="fas fa-external-link-alt"></i> View Certificate
@@ -539,7 +562,8 @@
             <h3 class="cert-title">Java Developer Intern</h3>
             <p class="cert-issuer">Groot Software</p>
             <p class="cert-date">June 2025 - July 2025</p>
-            <p class="cert-description">Core Java applications with focus on backend development and real-world solutions.</p>
+            <p class="cert-description">Core Java applications with focus on backend development and real-world
+              solutions.</p>
             <a href="https://drive.google.com/file/d/1mihU1ivVKNF1IU4hDiJm0LK8_U9E-vMT/view?usp=drive_link"
               class="cert-view-btn" target="_blank">
               <i class="fas fa-external-link-alt"></i> View Certificate
@@ -607,7 +631,8 @@
             <h3 class="cert-title">Python 3.4.3 Training</h3>
             <p class="cert-issuer">Spoken Tutorial Project, IIT Bombay</p>
             <p class="cert-date">November 2024</p>
-            <p class="cert-description">Successfully completed Python 3.4.3 training with course material from IIT Bombay.</p>
+            <p class="cert-description">Successfully completed Python 3.4.3 training with course material from IIT
+              Bombay.</p>
             <a href="https://drive.google.com/file/d/1F3bbkdgxkkvCzXtjxWLVfjcXc63jt3PJ/view?usp=drive_link"
               class="cert-view-btn" target="_blank">
               <i class="fas fa-external-link-alt"></i> View Certificate
@@ -726,7 +751,8 @@
             <h3 class="cert-title">AI/ML Workshop</h3>
             <p class="cert-issuer">B.K. Birla Institute of Engineering and Technology, Pilani</p>
             <p class="cert-date">January 2023</p>
-            <p class="cert-description">Participated in AI/ML workshop focusing on machine learning concepts and practical implementations.</p>
+            <p class="cert-description">Participated in AI/ML workshop focusing on machine learning concepts and
+              practical implementations.</p>
             <a href="https://drive.google.com/file/d/1AJ1hiujHFVKbNIg58gcl3L70yOgVuRsB/view?usp=drive_link"
               class="cert-view-btn" target="_blank">
               <i class="fas fa-external-link-alt"></i> View Certificate
